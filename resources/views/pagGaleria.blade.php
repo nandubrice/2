@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="{{ route('xGaleria') }}">GALERIA</a>
-    PAGINA GALERIA {{ $valor }}
-</body>
-</html>
+@extends('pagPlantilla')
+@section('titulo')
+    <h1>PAGINA GALERIA </h1>
+    <h3>Primer valor ingresado por url:  {{$valor}}</h3>
+    
+@endsection
+
+@section('cuerpo')
+    <h3>Segundo Valor que se Designa: {{$otro}}</h3>
+@endsection
