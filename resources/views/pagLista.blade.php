@@ -6,7 +6,7 @@
 @endsection
 
 @section('cuerpo')
-    @if(cuerpo('msj'))
+    @if(session('msj'))
       <div class="alert alert-sucess alert-dismissible fade show" role="alert">
         {{ session('msj') }}
         <button type="button" class="btn-close" data-bs-dismiss="alert" arial-label="close"></button>
@@ -56,7 +56,7 @@
         <option value="1">Activo</option>
       </select>
       <button class="btn btn-primary" type="submit">AGREGAR</button>
-      
+
     </form>
     <h3>LISTA</h3>
     <table class="table">

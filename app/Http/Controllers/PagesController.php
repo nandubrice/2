@@ -13,7 +13,7 @@ class PagesController extends Controller
         $xDetAlumnos = Estudiante::findOrFail($id);     //DATOS DE BD POR ID
         return view('Estudiante.pagDetalle', compact('xDetAlumnos'));
     }
-    public function fnRegistrar (request $_request){
+    public function fnRegistrar (request $request){
 
         //return $request;          //verificando "token" y datos recibidos
 
